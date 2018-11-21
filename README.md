@@ -1,2 +1,4 @@
 # CPP_Tools
-C++ Tools for ip tracking
+Use at your own risk. 
+:)
+Have a nice day! (I'm a fan of LA Beast!)
