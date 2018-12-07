@@ -6,7 +6,7 @@
  *     ./iptracker START 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG
  *     ./iptracker END 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG
  * File Format:
- * IP\tApp\tJobID\tTimeSubmit\tTimeStart\tTimeEnd\tDuration
+ * IP(17) App(16) JobID(35) TimeSubmit(13) TimeStart(13) TimeEnd(13) Duration(13) Note(8)
  */
 #include <iostream>
 #include <iomanip>
