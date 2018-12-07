@@ -1,10 +1,10 @@
 /*
  * Rule:
- *     ./iptracker STATUS IP App JobID Time Duration Note?
+ *     ./iptracker STATUS IP App JobID Time Duration Note LogPath
  * Example:
- *     ./iptracker SUBMIT 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG
- *     ./iptracker START 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG
- *     ./iptracker END 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG
+ *     ./iptracker SUBMIT 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG .
+ *     ./iptracker START 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG .
+ *     ./iptracker END 192.168.1.1 ezSMDock 10000000000000000000000000000001 DEBUG .
  * File Format:
  * IP(17) App(16) JobID(35) TimeSubmit(13) TimeStart(13) TimeEnd(13) Duration(13) Note(8)
  */
@@ -172,7 +172,8 @@ void log_FILE(const char *log_name)
 int main(int argc, char *argv[])
 {
     if (argc < 7){
-        cout << "Example: "<< argv[0] <<" [(Status) SUBMIT/START/END] [(IP) 192.168.1.1] [(App) ezSMDock] [(ID) 10000000000000000000000000000001] [DEBUG/Anynotes] [logPATH]\n";
+        cout << "Example: "<< argv[0] 
+             << " [(Status) SUBMIT/START/END] [(IP) 192.168.1.1] [(App) ezSMDock] [(ID) 10000000000000000000000000000001] [DEBUG/Anynotes] [logPATH]\n";
         return 1;
     }
     time_t now_Time = time(0);
