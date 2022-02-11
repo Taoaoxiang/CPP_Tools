@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+#*.so
+
+# vim swap
+*.swp
+**/.vs/
+**/build/
+# GuessNumber
+**/GuessNumber/bin/
+Game/GuessNumber/
+Game/GuessNumber/
+
+**/Blackjack/bin/
+**/Monopoly/bin/
+
+.vscode/
